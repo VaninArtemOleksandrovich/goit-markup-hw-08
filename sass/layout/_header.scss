@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid $header-border-color;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+
+  &__logo--dark {
+    color: $logo-text-color;
+  }
+}
