@@ -382,9 +382,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -983,7 +983,7 @@ input {
 .team__description {
   background-color: #ffffff;
   text-align: center;
-  padding: 30px 122px 24px;
+  padding: 30px 15px 24px;
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (min-width: 768px) {
@@ -1019,6 +1019,8 @@ input {
 }
 .clients__item {
   margin-bottom: 30px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 .clients__item:nth-child(odd) {
   margin-right: 30px;
@@ -1029,6 +1031,8 @@ input {
 @media screen and (min-width: 768px) {
   .clients__item {
     margin-right: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
   .clients__item:nth-child(3n+3) {
     margin-right: 0;
@@ -1039,6 +1043,8 @@ input {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
     margin-bottom: 0;
   }
   .clients__item:not(:last-child) {
@@ -1055,7 +1061,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
   height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
