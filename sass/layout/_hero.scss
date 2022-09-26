@@ -19,10 +19,10 @@
   }
   @media screen and(min-width:768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('.../images/hero-desk-min.jpg');
+      url('../images/hero-desk-min.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/bcg-hero-img@2x-tablet.jpg');
+        url('images/hero-desk2x-min.jpg');
     }
   }
 
@@ -35,7 +35,7 @@
       url('../images/hero-desk-min.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-desk2x-min.jpg');
+        url('../images/hero-desk2x.jpg');
     }
   }
 
