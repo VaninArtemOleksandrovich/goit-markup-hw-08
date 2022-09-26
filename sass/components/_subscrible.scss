@@ -1,4 +1,11 @@
 .subscribe {
+  text-align: center;
+  @media screen and(min-width:768px) {
+  }
+  @media screen and(min-width:1200px) {
+    text-align: start;
+  }
+
   &__title {
     font-size: 14px;
     text-transform: uppercase;
@@ -9,21 +16,25 @@
   }
 
   &__input {
-    padding: 15px 16px;
-
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-
-    min-width: 358px;
 
     background: $black-background-color;
 
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-
-    margin-right: 10px;
+    width: 100%;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    @media screen and(min-width:768px) {
+    }
+    @media screen and(min-width:1200px) {
+      margin-bottom: 0;
+      margin-right: 10px;
+      width: 358px;
+    }
   }
 
   &__btn {
@@ -53,5 +64,4 @@
 
   &__form {
     display: flex;
-  }
-}
+  }}

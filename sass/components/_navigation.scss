@@ -3,7 +3,12 @@
   align-items: center;
 
   &__list {
-    display: flex;
+    display: none;
+    @media  screen and(min-width:768px) {
+      display: flex;
+      margin-right: 100px;
+    }
+    
   }
 
   &__item:not(:last-child) {
@@ -47,4 +52,3 @@
     }
   }
 }
-  
